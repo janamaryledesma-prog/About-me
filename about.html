@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Johnna Mary Ledesma</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="Learn more about Johnna Mary Ledesma, an Information Systems student passionate about web development, database management, and system design.">
   <link rel="canonical" href="https://janamaryledesma-prog.github.io/About-me/about.html">
@@ -23,16 +30,26 @@
   <meta name="twitter:image" content="https://janamaryledesma-prog.github.io/About-me/assets/hero-md.jpg">
 </head>
 <body>
-  <header>
-    <h1>Johnna Mary Ledesma</h1>
-    <nav>
-      <ul>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Johnna Mary Ledesma</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="current" aria-current="page">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- Main Content -->
   <main>
     <section>
       <h2>About me</h2>
@@ -41,8 +58,11 @@
       <p>Outside of coding and IT systems, I enjoy exploring new web technology tools, system design, and practical hobbies like fishkeeping.</p>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Johnna Mary Ledesma</p>
   </footer>
+
 </body>
 </html>
