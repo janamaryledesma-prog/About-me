@@ -87,16 +87,9 @@ h1, h2, h3 {
   color: var(--clr-navy); 
 }
 
-h1 { 
-  font-size: clamp(2rem, 5vw, 3.5rem); 
-  margin-bottom: var(--space-md); 
-  line-height: 1.15;
-}
-
-h2 { 
-  font-size: 1.75rem; 
-  margin: var(--space-lg) 0 var(--space-sm); 
-}
+h1 { font-size: clamp(2rem, 4vw + 1rem, 4rem); line-height: 1.1; }
+h2 { font-size: clamp(1.5rem, 2.5vw + 0.75rem, 2.5rem); }
+p  { font-size: clamp(1rem, 0.5vw + 0.85rem, 1.15rem); }
 
 a { 
   color: var(--clr-accent); 
@@ -112,7 +105,6 @@ a {
   background-color: var(--clr-header-bg);
   color: var(--clr-header-text);
   
-  /* Robust full-bleed across viewport without hardcoded negative margins */
   width: 100vw;
   position: relative;
   left: 50%;
@@ -233,7 +225,6 @@ a.current,
   margin-bottom: var(--space-xs); 
 }
 
-/* Simplified spanning replacing fragile named grid-areas */
 .card-featured {
   grid-column: span 2;
   grid-row: span 2;
@@ -251,8 +242,7 @@ a.current,
   }
 }
 
-/* --- Form & Contact Page Styling --- */
-
+/* Form & Contact Page Styling */
 address {
   font-style: normal;
   margin-bottom: var(--space-md);
@@ -275,7 +265,6 @@ legend {
   padding: 0 var(--space-xs);
 }
 
-/* Form Groups */
 form p {
   margin-bottom: var(--space-sm);
   display: flex;
@@ -283,7 +272,6 @@ form p {
   gap: 0.25rem;
 }
 
-/* Checkbox Row Alignment */
 form p:has(input[type="checkbox"]),
 .form-checkbox-group {
   flex-direction: row;
@@ -329,7 +317,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Submit Button */
 button[type="submit"] {
   width: 100%;
   padding: 0.75rem 1.5rem;
@@ -353,7 +340,6 @@ button[type="submit"]:active {
   transform: translateY(0);
 }
 
-/* Footer Styling */
 footer {
   margin-top: var(--space-lg);
   padding-top: var(--space-md);
